@@ -6,16 +6,44 @@
     width: 960px;
     margin: 95px auto 0 auto;
     border: 1px solid #E1E5EE;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-rows {
+    width: 100%;
+    margin: 6px 0;
+    border-left: 10px solid;
+}
+
+.container-technology {
+    border-color: #00a1f1;
+}
+
+.container-dailylife {
+    border-color: #00FF77;
+}
+
+.container-sharesources {
+    border-color: #ff4500;
+}
+
+.container-comprehension {
+    border-color: #ffee00;
+}
+
+.container-mask {
+    width: 940px;
+    margin: 0 10px;
+    border-bottom: 1px solid #E1E5EE;
 }
 
 
 /*一行帖子样式*/
 
 .topic-rows {
-    height: 80px;
+    height: 120px;
     margin: 0 10px;
-    border-bottom: 1px solid #E1E5EE;
+    padding: 0 10px;
 }
 
 .topic-rows:hover {
@@ -51,10 +79,39 @@
 /*帖子标题和信息*/
 
 .topic-content {
-    width: 80%;
-    height: 80px;
+    width: 100%;
+    /* height: 80px; */
     float: left;
+    /* margin: 0 10px; */
     /*display: inline-block;*/
+}
+
+.topic-text {
+    /* margin: 10px; */
+    min-height: 32px;
+    max-height: 48px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.text-content {
+    width: 90%;
+    font-size: 16px;
+    padding: 5% 5% 0 5%;
+    /* font-family: 'Microsoft YaHei'; */
+    display: block;
+    line-height: 32px;
+    text-indent: 32px;
+    word-wrap: break-word;
+}
+
+.text-content i {
+    margin-left: 100px;
+}
+
+.text-title {
+    text-align: center;
+    margin: 50px 0 auto auto
 }
 
 
@@ -62,8 +119,9 @@
 
 .topic-title {
     height: 20px;
-    margin: 13px 0;
+    margin: 10px 0;
     font-size: 18px;
+    color: #232A3C;
     /*float: left;*/
 }
 
@@ -109,14 +167,29 @@
 }
 
 .topic-time {
-    height: 14px;
-    font-size: 14px;
+    height: 12px;
+    font-size: 12px;
+    margin: 14px 0;
     float: left;
     color: gray;
 }
 
 .topic-time span {
     margin: 0 10px;
+}
+
+.fa {
+    margin-right: 6px;
+    color: #bbbbbb;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa-tag:before {
+    content: "\f02b";
 }
 
 
@@ -307,6 +380,7 @@
 .top-logo {
     font-weight: 600;
     font-size: 40px;
+    font-family: 'roboto', 'Arial';
     font-style: italic;
     display: inline-block;
 }
@@ -314,6 +388,7 @@
 .top-logoscroll {
     font-weight: 600;
     font-size: 40px;
+    font-family: 'roboto', 'Arial';
     font-style: italic;
     display: inline-block;
     transform: translateY(-4px);
@@ -411,7 +486,7 @@
 
 .top-userinfo b {
     display: inline-block;
-    margin: 36px auto 0px auto;
+    margin: 40px auto 0px auto;
     font-size: 14px;
 }
 
@@ -526,14 +601,14 @@
 }
 
 .top-buttonbox {
-    height: 50px;
+    height: 60px;
     font-size: 14px;
     /*border: 1px solid black;*/
 }
 
 .top-button {
-    height: 20px;
-    line-height: 20px;
+    height: 30px;
+    line-height: 30px;
     margin: 2px;
     width: 100px;
     display: inline-block;
@@ -681,7 +756,7 @@
 
 .footer {
     height: 60px;
-    width:100%;
+    width: 100%;
     bottom: 0;
     line-height: 60px;
     margin-top: 10px;
